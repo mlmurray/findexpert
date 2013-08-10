@@ -1,4 +1,40 @@
-$topbar-bg: #111;
+#header {
+    width:100%;
+    margin:auto;
+    height:90px;
+    padding-top:9px;
+    padding-bottom:6px;
+    background: #000000;
+}
 
-$topbar-height: 65px;
-$topbar-margin-bottom: emCalc(30);
+.navigation {
+    margin:auto;
+    width:auto;
+    height:35px;
+    padding-top:5px;
+    position:relative;
+    z-index:300;
+    background:transparent;
+}
+
+.navigation a {
+    color:#eee;
+    text-decoration:none;
+}
+
+.navigation a:hover {
+    color:#4b656f;
+    text-decoration:underline;
+}
+
+.navigation li {
+    list-style:none;
+    display:inline;
+    margin:10px;
+    position:relative;
+}
+
+#space {
+    padding-top:130px;
+    width:500px
+}
