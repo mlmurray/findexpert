@@ -4,24 +4,23 @@
 <div class="row">
 
 <div class="large-6 columns">
-<h4>Experts Shouldnn't Be Hard to Find.</h4>
+<h3>Experts Shouldn't Be Hard to Find.</h3>
 
-<h6>Tired of getting bombarded by copy-and-paste proposals or getting undersold by overseas freelancers that can’t write a full sentence? Something exciting is coming for project managers and experts alike!</h6>
+<p>Tired of being undersold by proposals that start with “Dear Kind Sir”? Sick of working with freelancers that can’t write a coherent sentence?
+Nearly every person that has worked with crowdsourcing sites has AT LEAST one story like this.</b>
+<p><b>Sign up and receive updates </b>on how FindExpert is going to change all that!
 
-<p>Sign up now to receive pleasantly infrequent updates as we get ready to launch.  We won't spam you.  Pinky swear.
+  <%= form_for(mail_resource, :as => mail_resource_name, :url => mails_path(@mail_resource)) do |f| %>
 
- <%= form_for(mail_resource, :as => mail_resource_name, :url => new_mail_path()) do |f| %>
-
-  <div class="field">
-    <%= f.label :email %><br>
+  <div class="customactions">
     <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <div><%= f.submit "Sign up" %></div>
+    <%= f.submit "Sign up", :class => "embedsubmit" %>
   </div>
 <% end %>
-
-
-
+<font size="1" color="grey"><i>We won’t spam you. Pinky swear.</i></font>
+</div>
+<div class="large-6 columns"> 
+<iframe width="355" height="200"  src="//www.youtube.com/embed/6dq68QX7gcI" frameborder="0" allowfullscreen></iframe>
+</div>
 
 </div>

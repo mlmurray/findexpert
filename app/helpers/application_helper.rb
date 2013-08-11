@@ -13,7 +13,7 @@ module ApplicationHelper
   end
 	
   def mail_resource_name
-    :email
+    :mail
   end
 
   def mail_resource

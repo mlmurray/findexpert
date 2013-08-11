@@ -17,6 +17,10 @@ class MailsController < ApplicationController
     @mail = Mail.new
   end
 
+  # Thank you for signing up page
+  def thankyou
+  end
+
   # GET /mails/1/edit
   def edit
   end
@@ -28,7 +32,8 @@ class MailsController < ApplicationController
 
     respond_to do |format|
       if @mail.save
-        format.html { redirect_to @mail, notice: 'Mail was successfully created.' }
+        format.html { render action: 'thankyou'}
+	#redirect_to @mail.thankyou, notice: 'Mail was successfully created.' }
         format.json { render action: 'show', status: :created, location: @mail }
       else
         format.html { render action: 'new' }
