@@ -15,6 +15,7 @@ gem 'bcrypt-ruby'
 gem 'zurb-foundation', '~> 4.3.1'
 gem 'carrierwave', '~> 0.9.0'
 gem 'devise', '~> 3.0.2'
+gem "balanced" # payments
 
 group :development, :test do
   gem 'sqlite3'
@@ -27,10 +28,6 @@ group :production do
   gem 'pg', '0.16.0'
   gem 'rails_12factor', '0.0.2'
 end
-
-
-# Taking Payments
-gem "balanced"
 
 group :doc do
   gem 'sdoc', require: false

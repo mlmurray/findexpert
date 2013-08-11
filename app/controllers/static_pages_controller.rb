@@ -1,11 +1,18 @@
 class StaticPagesController < ApplicationController
+
   def home
   end
 
-  def expert
+  def about
   end
 
-  def client
+  def profile_expert
   end
-  
+
+  def dashboard_expert
+  end
+
+  def dashboard_client
+  end
+
 end
