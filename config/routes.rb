@@ -1,19 +1,14 @@
 Findexpert::Application.routes.draw do
 
   devise_for :users
+  resource :thankyou,         to: 'static_pages#thankyou',           via: 'get'
 
+  match '/about',             to: 'static_pages#about',              via: 'get'
+  match '/dashboard_client',  to: 'static_pages#dashboard_client',   via: 'get'
+  match '/dashboard_expert',  to: 'static_pages#dashboard_expert',   via: 'get'
+  match '/profile_expert',    to: 'static_pages#profile_expert',     via: 'get'
 
-  match '/about',              to: 'static_pages#about',   via: 'get'
-
-  match '/dashboard_client',   to: 'static_pages#about',   via: 'get'
-  match '/dashboard_expert',   to: 'static_pages#about',   via: 'get'
-  match '/profile_expert',     to: 'static_pages#about',   via: 'get'
-
-  resource :thankyou, to: 'static_pages#thankyou', via: 'get'
-  
   root 'static_pages#home'
-
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.

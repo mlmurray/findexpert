@@ -1,3 +1,7 @@
+h1 {
+    color: #ffffff
+}
+
 #header {
     width:100%;
     margin:auto;
@@ -5,6 +9,21 @@
     padding-top:0px;
     padding-bottom:6px;
     background: #000000;
+}
+
+#footer {
+    color: #999999;
+}
+
+.landing_container {
+    width: 100%;
+    background-image: url(http://i43.tinypic.com/2lbnhuf.jpg); 
+}
+
+.main_container {
+    width: 100%;
+    background: #241C23;
+    color: #eee;
 }
 
 .navigation {
