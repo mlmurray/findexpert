@@ -13,18 +13,7 @@
 
 <p>Sign up now to receive pleasantly infrequent updates as we get ready to launch.  We won't spam you.  Pinky swear.
 
-  <%= form_for(@record_emails) do |f| %>
-  <% if @record_email.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@record_email.errors.count, "error") %> prohibited this record_email from being saved:</h2>
-
-      <ul>
-      <% @record_email.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+ <%= form_for(mail_resource, :as => mail_resource_name, :url => new_mail_path()) do |f| %>
 
   <div class="field">
     <%= f.label :email %><br>
@@ -36,16 +25,8 @@
 <% end %>
 
 
-
-
-
-</div>
-<<<<<<< HEAD
-
-
 <div id="space"></div>
 
 
+
 </div>
-=======
->>>>>>> 0680e8156c39d2cdc3cd610c2fdb1fcdeb89bbbb

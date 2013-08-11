@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "record_emails/show" do
+describe "mails/show" do
   before(:each) do
-    @record_email = assign(:record_email, stub_model(RecordEmail,
+    @mail = assign(:mail, stub_model(Mail,
       :email => "Email"
     ))
   end
