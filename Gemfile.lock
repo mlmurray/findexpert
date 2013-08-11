@@ -27,6 +27,9 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.12)
+    balanced (0.7.4)
+      faraday (>= 0.8.6)
+      faraday_middleware (~> 0.9.0)
     bcrypt-ruby (3.1.1)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
@@ -58,6 +61,10 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     haml (4.0.3)
       tilt
     hike (1.2.3)
@@ -75,6 +82,7 @@ GEM
     mime-types (1.23)
     minitest (4.7.5)
     multi_json (1.7.8)
+    multipart-post (1.2.0)
     orm_adapter (0.4.0)
     pg (0.16.0)
     polyglot (0.3.3)
@@ -155,6 +163,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  balanced
   bcrypt-ruby
   better_errors
   binding_of_caller
