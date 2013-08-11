@@ -1,5 +1,7 @@
 Findexpert::Application.routes.draw do
 
+  resources :record_emails
+
   devise_for :users
   resource :thankyou,         to: 'static_pages#thankyou',           via: 'get'
 

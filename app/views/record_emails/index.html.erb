@@ -1,0 +1,27 @@
+<h1>Listing record_emails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @record_emails.each do |record_email| %>
+      <tr>
+        <td><%= record_email.email %></td>
+        <td><%= link_to 'Show', record_email %></td>
+        <td><%= link_to 'Edit', edit_record_email_path(record_email) %></td>
+        <td><%= link_to 'Destroy', record_email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Record email', new_record_email_path %>
