@@ -12,6 +12,3 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
-
-//= require the_role/bootstrap_sass
-//= require the_role

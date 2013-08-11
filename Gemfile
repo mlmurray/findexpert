@@ -28,9 +28,6 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-# Required for Administrative backend and roles
-gem 'bootstrap-sass', '~> 2.3.1.0'
-gem "the_role", "~> 2.0.0"
 
 # Taking Payments
 gem "balanced"
