@@ -13,11 +13,11 @@ module ApplicationHelper
   end
 	
   def mail_resource_name
-    :mail
+    :ourmail
   end
 
   def mail_resource
-    @mail_resource ||= Mail.new
+    @ourmail_resource ||= Ourmail.new
   end
 
   #def devise_mapping

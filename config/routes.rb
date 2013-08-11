@@ -1,9 +1,8 @@
 Findexpert::Application.routes.draw do
 
-  resources :mails 
+  resources :ourmails 
 
   devise_for :users
-  resource :thankyou,         to: 'static_pages#thankyou',           via: 'get'
 
   match '/about',             to: 'static_pages#about',              via: 'get'
   match '/dashboard_client',  to: 'static_pages#dashboard_client',   via: 'get'

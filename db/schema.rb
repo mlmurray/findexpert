@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130811065144) do
+ActiveRecord::Schema.define(version: 20130811192221) do
 
-  create_table "mails", force: true do |t|
+  create_table "ourmails", force: true do |t|
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
