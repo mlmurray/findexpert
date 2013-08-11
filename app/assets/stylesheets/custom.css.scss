@@ -5,26 +5,31 @@ h1 {
 #header {
     width:100%;
     margin:auto;
-    height:65px;
+    height:85px;
     padding-top:0px;
     padding-bottom:6px;
-    background: #000000;
+    background: #FFFFFF;
 }
+
+
+.headerimg{
+    height: 120px;
+    position:relative;
+    left:130px;
+    z-index:10000;
+}
+
 
 #footer {
     color: #999999;
-}
-
-.landing_container {
-    width: 100%;
-    background-image: url(http://i43.tinypic.com/2lbnhuf.jpg); 
+    margin-top: 75px;
 }
 
 .main_container {
     width: 100%;
-    background: #241C23;
-    color: #eee;
 }
+
+
 
 .navigation {
     margin:auto;
@@ -54,6 +59,59 @@ h1 {
 }
 
 #space {
-    padding-top:130px;
-    width:500px
+    padding-top:100px;
+    width:100%;
+    background: #0080FF;
+    margin-bottom:50px;
+}
+.headerimg{
+    position:relative;
+    left:130px;
+    height: 120px;
+    z-index:10000;
+}
+
+#footer {
+    color: #999999;
+    margin-top: 75px;
+}
+
+.main_container {
+    width: 100%;
+}
+
+
+
+.navigation {
+    margin:auto;
+    width:auto;
+    height:35px;
+    padding-top:0px;
+    position:relative;
+    z-index:300;
+    background:transparent;
+}
+
+.navigation a {
+    color:#eee;
+    text-decoration:none;
+}
+
+.navigation a:hover {
+    color:#4b656f;
+    text-decoration:underline;
+}
+
+.navigation li {
+    list-style:none;
+    display:inline;
+    margin:10px;
+    position:relative;
+}
+
+#space {
+    padding-top:100px;
+    width:100%;
+    background: #0080FF;
+    margin-bottom:50px;
 }
