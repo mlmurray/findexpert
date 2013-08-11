@@ -1,6 +1,11 @@
 class StaticPagesController < ApplicationController
 
-  def home
+  # Redirect to the thank you for signing up page after signup.
+  def after_sign_up_path_for(resource)
+    thankyou_path
+  end
+
+  def thankyou
   end
 
   def about
