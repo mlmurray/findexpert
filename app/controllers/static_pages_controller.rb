@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   def thankyou
   end
 
+  def home
+  end
+
   def about
   end
 
